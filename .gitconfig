@@ -1,0 +1,10 @@
+[user]
+  name = David Young
+  email = david@nospam.fake
+[alias]
+  b = branch
+  co = checkout
+  d = diff
+  disc = diff --ignore-space-change
+  ds = diff --staged
+  s = status
