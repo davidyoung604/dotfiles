@@ -4,10 +4,11 @@ local keymap = vim.api.nvim_set_keymap
 local opts = { noremap = true, silent = true }
 
 -- telescope
-keymap('n', '<Leader>t', ':Telescope find_files<CR>', opts)
+keymap('n', '<Leader>tf', ':Telescope find_files<CR>', opts)
+keymap('n', '<Leader>tb', ':Telescope buffers<CR>', opts)
 
 -- file tree
-keymap('n', '<Leader>f', ':NvimTreeToggle<CR>', {noremap = true})
+keymap('n', '<Leader>f', ':Neotree toggle<CR>', {noremap = true}) -- for neo-tree
 
 -- misc remaps
 keymap('i', 'kj', '<Esc>', opts)

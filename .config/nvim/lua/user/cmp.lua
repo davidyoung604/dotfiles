@@ -107,7 +107,7 @@ cmp.setup({
         nvim_lsp = "[LSP]",
         nvim_lua = "[NVim Lua]",
         luasnip = "[Snippet]",
-        buffer = "[Buffer]",
+        --buffer = "[Buffer]", -- Disabling this one as a test. I think the buffer suggestions are becoming problematic
         path = "[Path]",
       })[entry.source.name]
       return vim_item
@@ -117,7 +117,7 @@ cmp.setup({
     { name = "nvim_lsp" },
     { name = "nvim_lua" },
     { name = "luasnip" },
-    { name = "buffer" },
+    --{ name = "buffer" }, -- Disabling this as a test. See note above
     { name = "path" }
   }),
 	confirm_opts = {

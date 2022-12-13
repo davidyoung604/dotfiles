@@ -1,8 +1,9 @@
 local configs = require("nvim-treesitter.configs")
 
 configs.setup {
-  ensure_installed = "all",
+--  ensure_installed = "all", -- NOTE: setting "all" will add ~260ms to startup time
   sync_install = false,
+  auto_install = true, -- NOTE: requires tree-sitter CLI: https://github.com/tree-sitter/tree-sitter
   ignore_install = { "" }, -- List of parsers to ignore installing
   highlight = {
     enable = true, -- false will disable the whole extension

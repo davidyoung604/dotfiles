@@ -1,8 +1,5 @@
 -- This file can be loaded by calling `lua require('plugins')` from your init.vim
 
--- Only required if you have packer configured as `opt`
--- vim.cmd [[packadd packer.nvim]]
-
 -- Autocommand that reloads neovim whenever you save the plugins.lua file
 vim.cmd [[
   augroup packer_user_config
@@ -29,14 +26,19 @@ return packer.startup(function(use)
 	-- Finding files
   use { 'nvim-telescope/telescope.nvim',
     tag = '0.1.0',
-    requires = { {'nvim-lua/plenary.nvim'} }
+    requires = 'nvim-lua/plenary.nvim'
   }
   use { 'nvim-telescope/telescope-fzf-native.nvim',
     run = 'make'
   }
-	use { 'kyazdani42/nvim-tree.lua',
-		requires = 'kyazdani42/nvim-web-devicons',
-	}
+  use { 'nvim-neo-tree/neo-tree.nvim',
+    branch = 'v2.x',
+    requires = {
+      'nvim-lua/plenary.nvim',
+      'kyazdani42/nvim-web-devicons',
+      'MunifTanjim/nui.nvim'
+    }
+  }
 
 	-- Themes
 	use { 'folke/tokyonight.nvim' }
@@ -64,7 +66,8 @@ return packer.startup(function(use)
 
   -- LSP (Language Server Protocol)
   use { 'neovim/nvim-lspconfig' }
-  use { 'williamboman/nvim-lsp-installer' }
+  use { 'williamboman/mason.nvim' }
+  use { 'williamboman/mason-lspconfig.nvim' }
 
   -- Treesitter
   use {

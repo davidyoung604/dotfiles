@@ -1,8 +1,5 @@
-local status_ok, _ = pcall(require, "lspconfig")
-if not status_ok then
-  print("Unable to load lspconfig")
-  return
-end
+require("user.lsp.mason")
 
-require("user.lsp.lsp-installer")
+-- I don't know how much these particular configs are needed,
+-- but I was using them before the nvim-lsp-installer->mason migration
 require("user.lsp.handlers").setup()

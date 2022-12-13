@@ -8,6 +8,9 @@ if not status_ok then
   return
 end
 
+-- I kinda like the look of this one as well. May try it out in the future
+-- https://github.com/Tsuzat/NeoSolarized.nvim
+
 -- took these next two lines straight out of https://github.com/tcmmichaelb139/.dotfiles/blob/main/nvim/.config/nvim/lua/settings.lua
 -- no idea what they do
 -- vim.cmd[[highlight NormalFloat guibg=#1a1b26]]
