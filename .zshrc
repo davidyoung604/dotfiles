@@ -23,6 +23,5 @@ export EDITOR=nvim
 
 # aliases
 alias k=kubectl
-alias nvim=~/appimages/nvim.appimage-0.8.0
 alias config='/usr/bin/git --git-dir=$HOME/.dotfiles --work-tree=$HOME'
 
