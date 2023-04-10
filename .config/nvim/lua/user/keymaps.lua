@@ -8,3 +8,6 @@ keymap('i', 'kj', '<Esc>', opts)
 keymap('v', 'kj', '<Esc>', opts)
 keymap('n', '<leader>h', ':nohlsearch<CR>', opts)
 
+keymap('n', '<C-u>', '<C-u>zz', opts)
+keymap('n', '<C-d>', '<C-d>zz', opts)
+

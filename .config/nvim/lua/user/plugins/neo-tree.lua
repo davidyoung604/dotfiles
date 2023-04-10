@@ -20,6 +20,10 @@ function M.config()
       -- Focus the file corresponding to the current buffer
       follow_current_file = true,
       hijack_netrw_behavior = "open_default",
+      --close_if_last_window = true,
+      window = {
+        position = "left"
+      },
       -- This will use the OS level file watchers to detect changes
       use_libuv_file_watcher = false,
     }

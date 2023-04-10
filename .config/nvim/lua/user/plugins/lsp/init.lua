@@ -22,9 +22,9 @@ function M.config()
     function (server_name)
       lspconfig[server_name].setup({})
     end,
-    ["sumneko_lua"] = function ()
-      lspconfig["sumneko_lua"].setup(
-        require("user.plugins.lsp.servers")["sumneko_lua"]
+    ["lua_ls"] = function ()
+      lspconfig["lua_ls"].setup(
+        require("user.plugins.lsp.servers")["lua_ls"]
       )
     end
   })
