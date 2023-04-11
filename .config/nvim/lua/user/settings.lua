@@ -18,3 +18,6 @@ vim.api.nvim_create_autocmd({ "BufWritePre" }, {
   pattern = { "*" },
   command = [[match TrailingWhitespace /\s\+$/]]
 })
+
+-- Override the new default markdown formatting in 0.9.0+ (from upstream Vim)
+vim.cmd("let g:markdown_recommended_style = 0")
